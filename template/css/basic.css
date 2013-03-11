@@ -1,0 +1,191 @@
+
+body{
+    -webkit-text-size-adjust:none;
+    background: #FBFBFB url('images/bg.jpg') repeat;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-text-size-adjust:none;
+    min-width: 500px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #E60900;
+
+}
+
+.red{
+    color: #f17d70;
+}
+
+.green{
+    color: #84c08b;
+}
+
+.blue{
+    color: #6ea8cd;
+}
+
+.pink{
+    color: #c47dcd;
+}
+
+.orange{
+    color: #df8729;
+}
+
+
+.grey{
+    color: #757575;
+}
+
+.clear{
+    height: 0;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#footer{
+    margin: 60px -10% 30px -10%;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    padding-top: 10px;
+}
+
+#footer a{
+    text-decoration: none;
+    font-size: 0.7em;
+    color: #666;
+}
+
+#footer a:hover{
+    text-decoration: underline;
+    color: #E60900;
+
+}
+
+#footer .links{
+    margin-left: -35px;
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    width: 100%;
+}
+
+
+#footer .links li{
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#footer .links li a{
+    margin: 0 15px;
+}
+
+#footer .links li:before {
+    content: ' | ' ;
+    color: #ccc;
+    font-size: 10px;
+}
+#footer .links li:first-child:before {
+    content: " ";
+}
+
+
+#footer .powered_by{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#footer .powered_by span{
+    font-size: 9px;
+    padding: 0 15px;
+}
+
+
+
+
+/* for video */
+
+
+#farbox_v{
+    width:960px;
+    height:540px;
+    border: 1px solid #ddd;
+    margin: 45px auto 20px auto;
+    position: relative;
+    z-index: 999;
+
+}
+
+#farbox_v .vjs-controls{
+    display: none;
+}
+
+video{
+    width:100%;
+    height:100%;
+    cursor: pointer;
+    background: #fff;
+}
+
+#farbox_v .vjs-poster{
+    position: absolute;
+    display: block;
+    left: 0;
+    top:0;
+}
+
+
+#farbox_v .vjs-big-play-button{
+    width: 5.0em;
+    height: 5.0em;
+    border-radius: 10em;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    opacity: 0.5;
+}
+
+
+#farbox_v .vjs-big-play-button:hover{
+    opacity: 1;
+}
+
+#farbox_v .vjs-big-play-button span{
+    margin-left: -12px;
+}
+
+
+
+/*just for index page*/
+.buttons{
+    text-align: center;
+    margin: 70px 0 80px 0;
+    position: relative;
+    z-index: 9999;
+}
+
+.buttons a{
+    text-decoration: none;
+}
+
+.buttons .button {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding: 6px 18px 6px 5px;
+    margin-right: 60px;
+    border: 1px solid #ccc;
+}

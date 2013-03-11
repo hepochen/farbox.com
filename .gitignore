@@ -1,0 +1,5 @@
+fb.preview
+*.log
+domains.config
+.idea/
+.DS_Store

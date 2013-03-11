@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html><head>
+    <title>{% block title%}FarBox{% endblock %}</title>
+
+    {% block head %}
+    {% endblock%}
+
+    <link href="http://resource.farbox.com/zocial/zocial.css?version={{ resource_version }}" rel="stylesheet" type="text/css" />
+
+    <link href="/template/css/basic.css" rel="stylesheet" type="text/css"/>
+    <link href="/template/css/dashboard.css" rel="stylesheet" type="text/css"/>
+
+    <link href="http://resource.farbox.com/video-js/video-js.css?version={{ resource_version }}" rel="stylesheet" type="text/css" />
+    <script src="http://resource.farbox.com/video-js/video.js?version={{ resource_version }}"></script>
+
+
+</head>
+
+<body>
+
+{% block content %}
+{% endblock %}
+
+<div id="footer">
+
+    <div>
+        <ul class="links">
+            <li>
+                <a href="/price.md">服务与价格</a>
+            </li>
+            <li>
+                <a href="http://doc.farbox.com" target="_blank">帮助&开发文档</a>
+            </li>
+            <li>
+                <a href="/sites.md">大家的FarBox</a>
+            </li>
+            <li>
+                <a href="/contact.md">联系我们</a>
+            </li>
+            <li>
+                <a href="http://blog.farbox.com" target="_blank">我们的博客</a>
+            </li>
+            {% if request.is_login %}
+            {% if session_account.service!='farbox' %}
+            <li>
+                <a href="/service/sync/{{session_account.service}}/{{session_account.uid}}/" target="_blank">同步地址</a>
+            </li>
+            {% endif %}
+            <li>
+                <a href="/service/clear?type=account" target="_blank">清空账户</a>
+            </li>
+            <li>
+                <a href="/logout" target="_blank">退出登录</a>
+            </li>
+            {% endif %}
+        </ul>
+        <div class="powered_by">
+            <a target='_blank' href="http://www.farbox.com">Proudly Powered By FarBox.com</a>
+            <span>©2012-2015 Z.R.E.Y Inc.</span>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    var e = document.getElementById('farbox_v');
+    if (e){
+        var video = _V_('farbox_v');
+        function show_poster(){
+            var poster = document.getElementsByClassName('vjs-poster')[0];
+            poster.style.display = 'block';
+
+        }
+        video.addEvent('ended', show_poster);
+    }
+
+</script>
+
+
+</body>
+</html>

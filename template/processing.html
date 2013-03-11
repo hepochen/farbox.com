@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {% if info.email %}Email Sent{% elif info.ok %}Done{% else %}Error{% endif %}
+{% endblock %}
+
+{% block content%}
+
+<div class="col opt_info">
+    <h2>
+        {% if info.email %}Email Sent{% elif info.ok %}Done{% else %}Error{% endif %}
+    </h2>
+
+
+    <div class="content {%if info.error%}red{% else %}green{% endif %}">
+        {{ info.error or info.ok }}
+        {% if info.ok and info.email %}<span class="red">{{ info.email }}</span>{% endif %}
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head%}
+<link href="http://resource.farbox.com/css/basic.css?version={{ resource_version }}" rel="stylesheet" type="text/css" />
+<link href="/template/css/markdown.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block title %} {{post.title}} {% endblock %}
+
+{% block content %}
+<div id="md_head">
+    <h1>{{post.title}}</h1>
+    <a href="/" id="back_to_home">&lt;返回首页</a>
+</div>
+
+<div class="content">
+	{{ post.content }}
+</div>
+
+{% endblock %}

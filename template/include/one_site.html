@@ -1,0 +1,59 @@
+<ul class="site col">
+    <h2>
+        <a href="http://{{site.domain}}">{{site.title}} <small>{{site.domain}}</small></a>
+    </h2>
+
+    <li>
+        {% if site.domain %}
+        <a href="/statistics?domain={{site.domain}}" target="_blank">
+            <span class="tip blue">{{ get_ypv(site) }}</span>
+            <br />
+            <span class="caption">Yesterday Pageviews</span>
+        </a>
+        {% else %}
+        <a href="#">
+            <span class="tip blue">0</span>
+            <br />
+            <span class="caption">Yesterday Pageviews</span>
+        </a>
+        {% endif %}
+    </li>
+
+
+    <li>
+        {% if site.domain %}
+        <a href="/statistics?domain={{site.domain}}" target="_blank">
+            <span class="tip red">网站统计</span>
+            <br />
+            <span class="caption">Pageviews .etc</span>
+        </a>
+        {% else %}
+        <a href='#'>
+            <span class="tip grey">网站统计</span>
+            <br />
+            <span class="caption">Domain not Valid</span>
+        </a>
+        {% endif %}
+    </li>
+
+
+    <li>
+        <a href="http://{{site.domain}}/status" target="_blank">
+            <span class="tip green">Status</span>
+            <br />
+            <span class="caption">Status of Site</span>
+        </a>
+    </li>
+
+
+    <li>
+        <a href="/service/clear?type=site&name={{site.title}}" target="_blank">
+            <span class="tip grey">删除网站</span>
+            <br />
+            <span class="caption">You will receive a Email</span>
+        </a>
+    </li>
+
+    <div class="clear"></div>
+
+</ul>

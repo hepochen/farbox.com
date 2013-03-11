@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %} FarBox {%endblock%}
+
+{% block content %}
+
+<style type="text/css">
+    body {
+        min-width: 960px;
+    }
+</style>
+
+{% if not request.is_login %}
+    <video id="farbox_v" class="vjs-default-skin" controls
+           preload="none" width="960" height="540" poster="/template/css/farbox/index.png">
+        <source src="http://oss.aliyuncs.com/farbox/demo-2.mp4" type='video/mp4'>
+    </video>
+
+
+    <div class="buttons">
+        <a href="/fb-download" class="zocial cloudapp button">下载 FarBox Editor</a>
+        <a href="/service/dropbox/auth" class="dropbox zocial button">Dropbox登录 »</a>
+    </div>
+{% else %}
+    {% if has('sites') %}
+        {% set sites=get_sites() %}
+        {% for site in sites%}
+            {% include 'include/one_site.html' %}
+        {% endfor %}
+    {% else %}
+    <video id="farbox_v" class="vjs-default-skin" controls
+           preload="none" width="960" height="540" poster="/template/css/farbox/help.png">
+        <source src="http://oss.aliyuncs.com/farbox/demo-2.mp4" type='video/mp4'>
+    </video>
+    {% endif%}
+
+{% endif %}
+
+{% endblock %}
