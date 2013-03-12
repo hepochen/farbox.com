@@ -13,8 +13,9 @@
 
 [《Image》](http://image.farbox.com/) 可用于相册 默认模板
 
+[《Simple》](http://simple.farbox.com/) 仅可用于博客
 
-> 由FarBox Team提供的模板，其源码托管于GitHub，[《FarBox Templates》](https://github.com/hepochen/farbox-templates)，或者直接[下载ZIP文件](https://github.com/hepochen/farbox-templates/archive/master.zip)。
+> 由FarBox Team提供的模板，其源码托管于GitHub，[《FarBox Templates》](https://github.com/hepochen/farbox-templates)，或者直接[下载ZIP文件]（内包含多个模板源码），(https://github.com/hepochen/farbox-templates/archive/master.zip)。
 
 > **如果只是作为模板而不修改，则无需下载源码，访问网站时，底部有`Clone Template`，点击即可。**
 
@@ -22,10 +23,21 @@
 
 
 ## 自定义模板的同学
+[《衣不如新》](http://motype.org)  
 
-[《Kkeys》](http://kkeys.me/)
+[《Kkeys》](http://kkeys.me/)  
 
-[《Mr.X》](http://xxxx.io/)
+[《Coprime》](http://blog.copri.me)
+
+[《墨~轨迹》](http://morlay.farbox.com/)
+
+[《Laconic》](http://dushunfan.com/)
+
+[《疯狂的肉肉》](http://fkdrr.org/)
+
+[《Mr.X》](http://xxxx.io/)  
+
+[《RANCHO'S BLOG》](http://blog.gaoji.us/)
 
 [《Mn午夜》](http://sumory.com/)
 
@@ -33,26 +45,9 @@
 
 [《感悟丶世界之大为何我们相遇》](http://www.michellegu.com/)
 
-[《RANCHO'S BLOG》](http://blog.gaoji.us/)
+[《乌鲁木齐市基督教会明德堂》](http://xjchurch.org/)
 
 > 请注意:
 
 > 他们没有任何义务解答你的任何问题；礼貌，是唯一的通行证。
 
-- - - - - - - - -
-
-## 我们自己喜欢的
-
-[《CaiCai》](http://blog.cai-cai.me/)
-
-[《Jammy Life》](http://geektu.com/)
-
-[《海皮树屋》](http://stranbird.com/)
-
-[《一个呆子》](http://www.nerdyang.com)
-
-[《杨金昆的独立世界》](http://yangjinkun.cn/)
-
-
-
- 
