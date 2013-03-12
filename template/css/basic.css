@@ -21,7 +21,7 @@ a:hover{
 }
 
 .red{
-    color: #f17d70;
+    color: #e7645c;
 }
 
 .green{
@@ -29,7 +29,7 @@ a:hover{
 }
 
 .blue{
-    color: #6ea8cd;
+    color: #4296db;
 }
 
 .pink{
@@ -186,6 +186,6 @@ video{
     font-size: 1.2em;
     letter-spacing: 1px;
     padding: 6px 18px 6px 5px;
-    margin-right: 60px;
+    margin: 0 30px;
     border: 1px solid #ccc;
 }
