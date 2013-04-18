@@ -6,6 +6,11 @@
 
 
 {% if not request.is_login %}
+    <style type="text/css">
+        body {
+            min-width: 960px;
+        }
+    </style>
     <video id="farbox_v" class="vjs-default-skin" controls
            preload="none" width="960" height="540" poster="/template/css/farbox/index.png">
         <source src="http://stg.farbox.com/fb/v/demo.mp4" type='video/mp4'>
@@ -17,7 +22,7 @@
     </div>
 
 {% else %}
-    {% if has('sites') %}
+    {% if has('sites') and not request.args.freshman%}
         {% set sites=get_sites() %}
         {% for site in sites%}
             {% include 'include/one_site.html' %}
