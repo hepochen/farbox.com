@@ -29,6 +29,8 @@
 
 [《Coprime》](http://blog.copri.me)
 
+[《Dumi》](http://dumi.me)
+
 [《墨~轨迹》](http://morlay.farbox.com/)
 
 [《Laconic》](http://dushunfan.com/)

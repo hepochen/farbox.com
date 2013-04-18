@@ -1,3 +1,6 @@
+body {
+    min-width: 960px;
+}
 
 .col {
     position: relative;
@@ -62,6 +65,17 @@
 .site{
     line-height: 20px;
     margin: 50px 0 85px 0;
+    position: relative;
+}
+
+.site .commands{
+    position: absolute;
+    right: 10px;
+    top:15px;
+}
+
+.site .commands a:hover{
+    text-decoration: underline;
 }
 
 .site li{
@@ -88,12 +102,50 @@
     font-weight: bold;
     top: 35px;
     left: auto;
+    display: none;
 }
 
 .site .tip{
     font-size: 24px;
+}
 
+.site .tip small{
+    font-size: 0.6em;
+    position: relative;
+    top: -4px;
 }
 
 
 
+#no_site{
+
+}
+
+#no_site hr{
+    border: none;
+    border-bottom: 1px dashed #ddd;
+    height: 1px;
+    margin: 50px 0;
+}
+
+#no_site h1,#no_site h2{
+    padding:0;
+    margin:0;
+    border:0;
+    line-height:2.7;
+    text-align:center;
+    clear:both;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+#no_site h1{
+    margin-top:50px;
+    font-size:56px;
+}
+
+#no_site h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}

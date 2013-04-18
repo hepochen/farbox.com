@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html><head>
     <title>{% block title%}FarBox{% endblock %}</title>
-
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     {% block head %}
     {% endblock%}
 
-    <link href="http://resource.farbox.com/zocial/zocial.css?version={{ resource_version }}" rel="stylesheet" type="text/css" />
-
     <link href="/template/css/basic.css" rel="stylesheet" type="text/css"/>
     <link href="/template/css/dashboard.css" rel="stylesheet" type="text/css"/>
-
     <link href="http://resource.farbox.com/video-js/video-js.css?version={{ resource_version }}" rel="stylesheet" type="text/css" />
     <script src="http://resource.farbox.com/video-js/video.js?version={{ resource_version }}"></script>
 
@@ -35,17 +32,19 @@
                 <a href="/sites.md">大家的FarBox</a>
             </li>
             <li>
+                <a href="http://blog.farbox.com" target="_blank">博客</a>
+                <a href="http://update.farbox.com" target="_blank">更新</a>
                 <a href="/contact.md">联系我们</a>
             </li>
             <li>
-                <a href="http://blog.farbox.com" target="_blank">我们的博客</a>
+                <a href="/fb-download" target="_blank">下载</a>
             </li>
             {% if request.is_login %}
-            {% if session_account.service!='farbox' %}
+                {% if session_account.service!='farbox' %}
             <li>
                 <a href="/service/sync/{{session_account.service}}/{{session_account.uid}}/" target="_blank">同步地址</a>
             </li>
-            {% endif %}
+                {% endif %}
             <li>
                 <a href="/service/clear?type=account" target="_blank">清空账户</a>
             </li>
